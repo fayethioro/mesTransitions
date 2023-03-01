@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  .container
+   {
+          background-color: rgb(42, 40, 40);
+          width: 500px;
+          margin-top:15%;
+          margin-left: 25%;
+          height: 500px;
+          display: flex; 
+          align-items: center;
+          justify-content: center;
+   }
+  
+  .box
+  {
+    position: absolute;
+    width: 300px;
+   height: 300px;
+    background:#960404;
+  }
+  .box  span
+  {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+  }
+  .box1
+  {
+          content: "";
+          width: 300px;
+          height: 300px;
+          background: #960404;
+          transform: rotate(45deg);
+  }
+  .box1  span{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .ecriture
+  {
+      position: absolute;
+      left: 35%;
+      top: 30%;
+      z-index: 12;
+      font-size: 2em;
+      font-family: 'poppins';
+      text-align: center;
+      width: 40px;
+      height: min-content;
+  }
+  .ecriture span
+  {
+      color :white;
+      font-weight: 900;
+  
+  }
+  
+  .boxer:hover .one
+  {
+   transition: width 500ms ease  0ms;
+    
+  }
+  .boxer:hover .two
+  {
+   transition: height  500ms ease  300ms;
+    
+  }
+  .boxer:hover .three
+  {
+   transition: width 500ms ease  0ms;
+    
+  }
+  .boxer:hover .four
+  {
+   transition: height 500ms ease  300ms;
+    
+  }
+  
+  .boxer:hover .one
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 5px;
+    background: white;
+    top: 0;
+  }
+  .boxer:hover .two
+  {
+    content: '';
+    position: absolute;
+    width:5px;
+    height: 100%;
+    background: white;
+    right: 0;
+  
+  }
+  .boxer:hover .three
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 5px;
+    background: white;
+    bottom: 0;
+  }
+  .boxer:hover .four
+  {
+    content: '';
+    position: absolute;
+    width:5px;
+    height: 100%;
+    background: white;
+    left: 0;
+  }
