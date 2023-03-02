@@ -1,0 +1,40 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.Cool
+{
+  width: 500px;
+  height: 150px;
+  position: relative;
+  border: ridge 7px white;
+  overflow: hidden;
+}
+
+h1
+{
+  position: absolute;
+  text-align: center;
+  top: 25% ;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+h1:hover
+{
+ transform: scale(0.8);
+}
