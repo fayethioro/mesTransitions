@@ -51,6 +51,8 @@ h1
   right: 0;
   text-align: center;
   color: #981706;
+  transition-duration: 1s;
+  transition-property: color;
   
 }
 h1:hover
