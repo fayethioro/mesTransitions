@@ -33,10 +33,14 @@ body{
     transition-property: transform;
     transition-duration: 1s;
     transform: translateY(-100%);
-   
+    display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.Cool:hover::before {
+.Cool:hover::before 
+{
     transform: translateY(0);
+    z-index: 12;
   }
 h1
 {
@@ -47,4 +51,8 @@ h1
   bottom: 0;
   right: 0;
   text-align: center;
+}
+h1:hover
+{
+   z-index: -2;
 }
