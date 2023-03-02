@@ -33,29 +33,40 @@ body{
     height: 100%;
     background-color: #5fd822;
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: .8s;
     transform: translate(-100% ,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 .Cool:hover::before {
     transform: translate(0);
-  }
-h1
-{
-  position: absolute;
-  text-align: center;
-  top: 25% ;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  color: white;
+    z-index: 12;
 }
-h1:hover
+.Cool::after
 {
-    transition-duration: 1s;
-    transition-property: transform;
-    transform: translateX(100%);
+   content: "Hoverable";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .8s;
+  transition-property: transform;
+}
+.Cool:hover::after
+{
+    
+    transform: translate(100% ,-100%);
+    
 }
 
 
