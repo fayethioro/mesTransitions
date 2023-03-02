@@ -1,0 +1,79 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.Cool
+{
+  width: 500px;
+  height: 150px;
+  position: relative;
+  border: ridge 7px white;
+  overflow: hidden;
+}
+.Cool::after
+{
+   content: "Hoverable";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration:1s;
+}
+.Cool:hover::after
+{
+  font-size: 12rem;
+  opacity: 0;  
+}
+.Cool::before
+{
+   content: "Hoverable";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15rem;
+    position: absolute;
+    opacity: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-duration:1s; */
+}
+.Cool:hover::before
+{
+  font-size: 2rem;
+  opacity: 1; 
+}
+h1
+{
+  position: absolute;
+  top
+  text-align: center;
+  top: 35% ;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}

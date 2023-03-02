@@ -22,7 +22,7 @@ body{
 }
 .Cool::after
 {
-   content: "Hoverable";
+    content: "Hoverable";
     color: white;
     text-align: center;
     font-weight: bold;
@@ -42,7 +42,7 @@ body{
   font-size: 12rem;
   opacity: 0;  
 }
-.Cool::before
+/* .Cool::before
 {
    content: "Hoverable";
     color: white;
@@ -58,13 +58,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition-duration:1s; */
+    /* transition-duration:1s; 
 }
 .Cool:hover::before
 {
   font-size: 2rem;
   opacity: 1; 
-}
+} */
 h1
 {
   position: absolute;
