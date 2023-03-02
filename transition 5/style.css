@@ -1,0 +1,70 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.Cool
+{
+  width: 500px;
+  height: 150px;
+  position: relative;
+  border: groove 7px white;
+  overflow: hidden;
+}
+
+.Cool::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-property: background ;
+    transition-duration: 1s;
+    
+   
+}
+.Cool:hover:before 
+{
+    background-color: #981706;
+   
+}
+
+.Cool::after
+{
+    content: "";
+     height: 10px;
+     width: 190px;
+     position: absolute;
+     top: 0%;
+     right: 0;
+     transform: rotate(45deg) scaleX(0);
+     transition-property: background transform ;
+     transition-duration: 0.01s;
+}
+.Cool:hover::after
+{
+    background-color:white;
+    transform: scale(1) rotate(45deg);
+}
+
+h1
+{
+  position: absolute;
+  text-align: center;
+  top: 25% ;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
