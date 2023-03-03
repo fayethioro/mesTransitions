@@ -10,15 +10,24 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(34, 31, 31);
 }
 .Cool
 {
   width: 500px;
   height: 150px;
   position: relative;
-  border: ridge 7px white;
-  overflow: hidden;
+  background: rgb(34, 31, 31);
+  /* overflow: hidden; */
+  border: groove 5px black;
+  color: white;
+  transition-duration: 1s;
+}
+.Cool:hover
+{
+    color: black;
+    background: white;
+    border: none;
 }
 .Cool::after
 {
@@ -31,16 +40,26 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration:1s;
-}
-.Cool:hover::after
+    background-color: rgb(34, 31, 31);;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition:transform  height width; 
+    
+ 
+} 
+ .Cool:hover::after
 {
-  font-size: 12rem;
-  opacity: 0;  
+    transform:  transform: scaleX(12) translateX(-100%)  ;
+    transform-origin: center;
+    height: 10px;
+    width: 20px;
+    font-size: 0.1rem;
+    border: solid white;
+    opacity: 0;
 }
 .Cool::before
 {
@@ -48,32 +67,42 @@ body{
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 15rem;
+    font-size: 2rem;
     position: absolute;
-    opacity: 0; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition-duration:1s; */
-}
-.Cool:hover::before
+    background-color: rgb(34, 31, 31);;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property:transform  height width; 
+} 
+ .Cool:hover::before
 {
-  font-size: 2rem;
-  opacity: 1; 
+    transform: scaleX(-2)   ;
+    transform-origin: left;
+    height: 10px;
+    width: 20px;
+    border: solid white;
+    opacity: 0;
+    font-size: 0.1rem; 
 }
 h1
 {
   position: absolute;
   top
   text-align: center;
-  top: 35% ;
+  top: 30% ;
   left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
-  color: white;
 }
+/* h1:hover
+{
+  opacity: 0;
+} */
